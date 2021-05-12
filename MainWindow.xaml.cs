@@ -39,6 +39,10 @@ namespace RestaurantMenu {
                 GridPrincipal.Children.Clear();
                 GridPrincipal.Children.Add(new UserControlDishes());
                 break;
+            case 1:
+                GridPrincipal.Children.Clear();
+                GridPrincipal.Children.Add(new UserControlPizza());
+                break;
             default:
                 break;
             }
@@ -47,6 +51,10 @@ namespace RestaurantMenu {
         private void MoveCursorMenu(int index) {
             TransitioningContentSlide.OnApplyTemplate();
             GridCursor.Margin = new Thickness(0, 100 + (60 * index), 0, 0);
+        }
+
+        private void ListViewItem_Selected(object sender, RoutedEventArgs e) {
+
         }
     }
 }

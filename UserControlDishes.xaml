@@ -7,19 +7,68 @@
              mc:Ignorable="d" 
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              d:DesignHeight="300" Width="auto">
-    <Grid>
-		<materialDesign:TransitioningContent x:Name="TransitioningContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}">
+	<Grid>
+		<materialDesign:TransitioningContent x:Name="TransitioningContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.2}">
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="*"/>
+				</Grid.ColumnDefinitions>
+				<Grid Grid.Column="0" Height="300" Background="#fff3f3f3" Margin="10">
+					<Grid.Effect>
+						<DropShadowEffect BlurRadius="20" Color="#FFE4E4E4" ShadowDepth="1"/>
+					</Grid.Effect>
 
-			<StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
-				<StackPanel>
-					<TextBlock Text="Apenas" FontFamily="Century Gothic" Foreground="#ffc00000"/>
-					<StackPanel>
-						<TextBlock Text=""/>
+					<StackPanel Width="200">
+						<TextBlock Margin="10 10 0 0" FontSize="16" FontFamily="Showcard Gothic" Text="Паста Карбонара"/>
+						<Image Source="Assets/carbonara.jpg" Width="200" Height="150" Stretch="UniformToFill"/>
+						<TextBlock FontSize="10" Margin="5" TextWrapping="Wrap" FontFamily="Century Gothic">
+							Паста Карбонара — спагетти с мелкими кусочками бекона, смешанные с интересным соусом.
+						</TextBlock>
+						<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+							<TextBlock Text="200 р." VerticalAlignment="Center" Margin="20" FontSize="20" FontFamily="Century Gothic"/>
+							<Button Width="100" Content="Добавить" FontFamily="Century Gothic" Margin="10"/>
+						</StackPanel>
 					</StackPanel>
-					<Button/>
-				</StackPanel>
-				<Image Margin="10" Width="200" Height="200"/>
-			</StackPanel>
+				</Grid>
+
+				<Grid Grid.Column="1" Height="300" Background="#fff3f3f3" Margin="10">
+					<Grid.Effect>
+						<DropShadowEffect BlurRadius="20" Color="#FFE4E4E4" ShadowDepth="1"/>
+					</Grid.Effect>
+
+					<StackPanel Width="200">
+						<TextBlock Margin="10 10 0 0" FontSize="16" FontFamily="Showcard Gothic" Text="Паста Болоньезе"/>
+						<Image Source="/Assets/bolognese.jpg" Width="200" Height="150" Stretch="UniformToFill"/>
+						<TextBlock FontSize="10" Margin="5" TextWrapping="Wrap" FontFamily="Century Gothic">
+							Родиной соуса Болоньезе является итальянский город Болонья, что отражено в его названии.
+						</TextBlock>
+						<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+							<TextBlock Text="230 р." VerticalAlignment="Center" Margin="20" FontSize="20" FontFamily="Century Gothic"/>
+							<Button Width="100" Content="Добавить" FontFamily="Century Gothic" Margin="10"/>
+						</StackPanel>
+					</StackPanel>
+				</Grid>
+
+				<Grid Grid.Column="2" Height="300" Background="#fff3f3f3" Margin="10">
+					<Grid.Effect>
+						<DropShadowEffect BlurRadius="20" Color="#FFE4E4E4" ShadowDepth="1"/>
+					</Grid.Effect>
+
+					<StackPanel Width="200">
+						<TextBlock Margin="10 10 0 0" FontSize="16" FontFamily="Showcard Gothic" Text="Гаспачо"/>
+						<Image Source="Assets/gazpacho.jpg" Width="200" Height="150" Stretch="UniformToFill"/>
+						<TextBlock FontSize="10" Margin="5" TextWrapping="Wrap" FontFamily="Century Gothic">
+							Гаспачо — блюдо испанской кухни, лёгкий холодный суп из перетёртых в пюре свежих овощей.
+						</TextBlock>
+						<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+							<TextBlock Text="200 р." VerticalAlignment="Center" Margin="20" FontSize="20" FontFamily="Century Gothic"/>
+							<Button Width="100" Content="Добавить" FontFamily="Century Gothic" Margin="10"/>
+						</StackPanel>
+					</StackPanel>
+				</Grid>
+			</Grid>
 		</materialDesign:TransitioningContent>
 	</Grid>
 </UserControl>

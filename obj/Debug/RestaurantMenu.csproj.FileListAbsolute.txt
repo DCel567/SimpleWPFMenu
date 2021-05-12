@@ -22,3 +22,5 @@ C:\Programming\Visual Studio workspace\CS\RestaurantMenu\obj\Debug\RestaurantMen
 C:\Programming\Visual Studio workspace\CS\RestaurantMenu\obj\Debug\RestaurantMenu.pdb
 C:\Programming\Visual Studio workspace\CS\RestaurantMenu\obj\Debug\UserControlDishes.g.cs
 C:\Programming\Visual Studio workspace\CS\RestaurantMenu\obj\Debug\UserControlDishes.baml
+C:\Programming\Visual Studio workspace\CS\RestaurantMenu\obj\Debug\UserControlPizza.g.cs
+C:\Programming\Visual Studio workspace\CS\RestaurantMenu\obj\Debug\UserControlPizza.baml
