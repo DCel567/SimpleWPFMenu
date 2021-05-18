@@ -66,8 +66,17 @@
     <Compile Include="UserControlBasket.xaml.cs">
       <DependentUpon>UserControlBasket.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControlColdDrinks.xaml.cs">
+      <DependentUpon>UserControlColdDrinks.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlDeserts.xaml.cs">
+      <DependentUpon>UserControlDeserts.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControlDishes.xaml.cs">
       <DependentUpon>UserControlDishes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlHotDrinks.xaml.cs">
+      <DependentUpon>UserControlHotDrinks.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControlPizza.xaml.cs">
       <DependentUpon>UserControlPizza.xaml</DependentUpon>
@@ -88,7 +97,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UserControlColdDrinks.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlDeserts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UserControlDishes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlHotDrinks.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -133,6 +154,21 @@
     <Resource Include="Assets\bolognese.jpg" />
     <Resource Include="Assets\carbonara.jpg" />
     <Resource Include="Assets\gazpacho.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\tiramisu.jpg" />
+    <Resource Include="Assets\tortik.jpg" />
+    <Resource Include="Assets\yogurt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\coffee.jpg" />
+    <Resource Include="Assets\grogg.jpg" />
+    <Resource Include="Assets\tea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\beer.jpg" />
+    <Resource Include="Assets\cocktail.jpg" />
+    <Resource Include="Assets\cola.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\MaterialDesignThemes.4.0.0\build\MaterialDesignThemes.targets" Condition="Exists('packages\MaterialDesignThemes.4.0.0\build\MaterialDesignThemes.targets')" />

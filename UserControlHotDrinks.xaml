@@ -1,12 +1,12 @@
-﻿<UserControl x:Class="RestaurantMenu.UserControlDishes"
+﻿<UserControl x:Class="RestaurantMenu.UserControlHotDrinks"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:RestaurantMenu"
              mc:Ignorable="d" 
-             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-             d:DesignHeight="300" Width="auto">
+			 xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             Height="auto" Width="auto">
 	<Grid>
 		<materialDesign:TransitioningContent x:Name="TransitioningContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.2}">
 			<Grid>
@@ -21,14 +21,14 @@
 					</Grid.Effect>
 
 					<StackPanel Width="200">
-						<TextBlock Margin="10 10 0 0" FontSize="16" FontFamily="Showcard Gothic" Text="Паста Карбонара"/>
-						<Image Source="Assets/carbonara.jpg" Width="200" Height="150" Stretch="UniformToFill"/>
+						<TextBlock Margin="10 10 0 0" FontSize="16" FontFamily="Showcard Gothic" Text="Чай зеленый"/>
+						<Image Source="Assets/tea.jpg" Width="200" Height="150" Stretch="UniformToFill"/>
 						<TextBlock FontSize="10" Margin="5" TextWrapping="Wrap" FontFamily="Century Gothic">
-							Паста Карбонара — спагетти с мелкими кусочками бекона, смешанные с интересным соусом.
+							Отличный напиток в любую погоду и даже ночью! Попробуйте -- не пожалеете!
 						</TextBlock>
 						<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
 							<TextBlock Text="200 р." VerticalAlignment="Center" Margin="20" FontSize="20" FontFamily="Century Gothic"/>
-							<Button x:Name="btn_karbonara" Width="100" Content="Добавить" FontFamily="Century Gothic" Margin="10" Click="btn_karbonara_Click"/>
+							<Button Width="100" Content="Добавить" FontFamily="Century Gothic" Margin="10"/>
 						</StackPanel>
 					</StackPanel>
 				</Grid>
@@ -39,14 +39,14 @@
 					</Grid.Effect>
 
 					<StackPanel Width="200">
-						<TextBlock Margin="10 10 0 0" FontSize="16" FontFamily="Showcard Gothic" Text="Паста Болоньезе"/>
-						<Image Source="/Assets/bolognese.jpg" Width="200" Height="150" Stretch="UniformToFill"/>
+						<TextBlock Margin="10 10 0 0" FontSize="16" FontFamily="Showcard Gothic" Text="Каппучино"/>
+						<Image Source="/Assets/coffee.jpg" Width="200" Height="150" Stretch="UniformToFill"/>
 						<TextBlock FontSize="10" Margin="5" TextWrapping="Wrap" FontFamily="Century Gothic">
-							Родиной соуса Болоньезе является итальянский город Болонья, что отражено в его названии.
+							Отличный напиток в любую погоду и даже ночью! Попробуйте -- не пожалеете!
 						</TextBlock>
 						<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
 							<TextBlock Text="230 р." VerticalAlignment="Center" Margin="20" FontSize="20" FontFamily="Century Gothic"/>
-							<Button x:Name="btn_boloneze" Width="100" Content="Добавить" FontFamily="Century Gothic" Margin="10" Click="btn_boloneze_Click"/>
+							<Button Width="100" Content="Добавить" FontFamily="Century Gothic" Margin="10"/>
 						</StackPanel>
 					</StackPanel>
 				</Grid>
@@ -57,10 +57,10 @@
 					</Grid.Effect>
 
 					<StackPanel Width="200">
-						<TextBlock Margin="10 10 0 0" FontSize="16" FontFamily="Showcard Gothic" Text="Гаспачо"/>
-						<Image Source="Assets/gazpacho.jpg" Width="200" Height="150" Stretch="UniformToFill"/>
+						<TextBlock Margin="10 10 0 0" FontSize="16" FontFamily="Showcard Gothic" Text="Грог"/>
+						<Image Source="Assets/grogg.jpg" Width="200" Height="150" Stretch="UniformToFill"/>
 						<TextBlock FontSize="10" Margin="5" TextWrapping="Wrap" FontFamily="Century Gothic">
-							Гаспачо — блюдо испанской кухни, лёгкий холодный суп из перетёртых в пюре свежих овощей.
+							Отличный напиток в любую погоду и даже ночью! Попробуйте -- не пожалеете!
 						</TextBlock>
 						<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
 							<TextBlock Text="200 р." VerticalAlignment="Center" Margin="20" FontSize="20" FontFamily="Century Gothic"/>

@@ -14,7 +14,7 @@
 					<TextBlock Text="Menu" VerticalAlignment="Center" FontSize="20" FontFamily="Yu Gothic UI Light" Margin="20 0"/>
 				</StackPanel>
 				<StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="10 0">
-					<Button Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray" Margin="0 0 10 0">
+					<Button x:Name="btn_basket"  Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray" Margin="0 0 10 0" Click="btn_basket_Click">
 						<materialDesign:PackIcon Kind="Basket"/>
 					</Button>
 					<Button x:Name="ButtonCloseApp" Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray" Click="ButtonCloseApp_Click">

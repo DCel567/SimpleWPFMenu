@@ -24,3 +24,11 @@ C:\Programming\Visual Studio workspace\CS\RestaurantMenu\obj\Debug\UserControlDi
 C:\Programming\Visual Studio workspace\CS\RestaurantMenu\obj\Debug\UserControlDishes.baml
 C:\Programming\Visual Studio workspace\CS\RestaurantMenu\obj\Debug\UserControlPizza.g.cs
 C:\Programming\Visual Studio workspace\CS\RestaurantMenu\obj\Debug\UserControlPizza.baml
+C:\Programming\Visual Studio workspace\CS\RestaurantMenu\obj\Debug\UserControlBasket.g.cs
+C:\Programming\Visual Studio workspace\CS\RestaurantMenu\obj\Debug\UserControlDeserts.g.cs
+C:\Programming\Visual Studio workspace\CS\RestaurantMenu\obj\Debug\UserControlBasket.baml
+C:\Programming\Visual Studio workspace\CS\RestaurantMenu\obj\Debug\UserControlDeserts.baml
+C:\Programming\Visual Studio workspace\CS\RestaurantMenu\obj\Debug\UserControlHotDrinks.g.cs
+C:\Programming\Visual Studio workspace\CS\RestaurantMenu\obj\Debug\UserControlHotDrinks.baml
+C:\Programming\Visual Studio workspace\CS\RestaurantMenu\obj\Debug\UserControlColdDrinks.g.cs
+C:\Programming\Visual Studio workspace\CS\RestaurantMenu\obj\Debug\UserControlColdDrinks.baml

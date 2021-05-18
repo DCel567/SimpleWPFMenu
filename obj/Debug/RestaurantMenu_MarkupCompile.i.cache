@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Programming\Visual Studio workspace\CS\RestaurantMenu\App.xaml
-4701341745
+7-1494315439
 
-9-522949318
+12-1968494004
 15864011893
-MainWindow.xaml;UserControlBasket.xaml;UserControlDishes.xaml;UserControlPizza.xaml;
+MainWindow.xaml;UserControlBasket.xaml;UserControlColdDrinks.xaml;UserControlDeserts.xaml;UserControlDishes.xaml;UserControlHotDrinks.xaml;UserControlPizza.xaml;
 
 True
 

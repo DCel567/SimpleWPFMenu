@@ -15,15 +15,11 @@ using System.Windows.Shapes;
 
 namespace RestaurantMenu {
     /// <summary>
-    /// Interaction logic for UserControlBasket.xaml
+    /// Interaction logic for UserControlDeserts.xaml
     /// </summary>
-    public partial class UserControlBasket : UserControl {
-        public UserControlBasket() {
+    public partial class UserControlDeserts : UserControl {
+        public UserControlDeserts() {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e) {
-
         }
     }
 }

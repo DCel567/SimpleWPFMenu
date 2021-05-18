@@ -18,6 +18,10 @@ namespace RestaurantMenu {
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window {
+
+        public static List<string> basketContains = new List<string>(){};
+        public static double totalPrice = 0;
+        
         public MainWindow() {
             InitializeComponent();
         }
@@ -43,6 +47,18 @@ namespace RestaurantMenu {
                 GridPrincipal.Children.Clear();
                 GridPrincipal.Children.Add(new UserControlPizza());
                 break;
+            case 2:
+                GridPrincipal.Children.Clear();
+                GridPrincipal.Children.Add(new UserControlDeserts());
+                break;
+            case 3:
+                GridPrincipal.Children.Clear();
+                GridPrincipal.Children.Add(new UserControlHotDrinks());
+                break;
+            case 4:
+                GridPrincipal.Children.Clear();
+                GridPrincipal.Children.Add(new UserControlColdDrinks());
+                break;
             default:
                 break;
             }
@@ -54,6 +70,15 @@ namespace RestaurantMenu {
         }
 
         private void ListViewItem_Selected(object sender, RoutedEventArgs e) {
+
+        }
+
+        private void btn_basket_Click(object sender, RoutedEventArgs e) {
+            GridPrincipal.Children.Clear();
+            UserControlBasket basket = new UserControlBasket();
+            basket.list.ItemsSource = basketContains;
+            basket.TotalPrice.Text = Convert.ToString(totalPrice)+" р.";
+            GridPrincipal.Children.Add(basket);
 
         }
     }
