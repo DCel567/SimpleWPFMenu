@@ -27,13 +27,14 @@
 								<DataTemplate>
 									<StackPanel Margin="5" Orientation="Horizontal">
 										<Grid>
-											<TextBlock Text="{Binding Path=Title}" FontSize="16" FontFamily="Century Gothic" HorizontalAlignment="Left" />
-										</Grid>
-										<Grid>
-											<TextBlock Width="50" Text="{Binding Path=Price}" FontSize="16" Margin="10 0 0 0" FontFamily="Century Gothic" HorizontalAlignment="Center"/>
-										</Grid>
-										<Grid Width="auto">
-											<Button x:Name="btn_delete" Width="20" Height="20" Click="btn_delete_Click" HorizontalAlignment="Right"/>
+											<Grid.ColumnDefinitions>
+												<ColumnDefinition Width="110"/>
+												<ColumnDefinition Width="40"/>
+												<ColumnDefinition Width="*"/>
+											</Grid.ColumnDefinitions>
+											<TextBlock Grid.Column="0" Text="{Binding Path=Title}" FontSize="16" FontFamily="Century Gothic" HorizontalAlignment="Left" />
+											<TextBlock Grid.Column="1" Width="50" Text="{Binding Path=Price}" FontSize="16" FontFamily="Century Gothic" HorizontalAlignment="Left"/>
+											<Button Grid.Column="2" x:Name="btn_delete" Width="20" Height="20" Click="btn_delete_Click" HorizontalAlignment="Right"/>
 										</Grid>
 									</StackPanel>
 								</DataTemplate>
