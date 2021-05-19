@@ -23,13 +23,15 @@ namespace RestaurantMenu {
         }
 
         private void btn_boloneze_Click(object sender, RoutedEventArgs e) {
-            RestaurantMenu.MainWindow.basketContains.Add("Болоньезе паста");
-            RestaurantMenu.MainWindow.totalPrice += 230;
+            RestaurantMenu.MainWindow.basketContent.Add(new Dish {Title="Болоньезе", Price=230 });
         }
 
         private void btn_karbonara_Click(object sender, RoutedEventArgs e) {
-            RestaurantMenu.MainWindow.basketContains.Add("Карбонара паста");
-            RestaurantMenu.MainWindow.totalPrice += 200;
+            RestaurantMenu.MainWindow.basketContent.Add(new Dish { Title = "Карбонара", Price = 200 });
+        }
+
+        private void btn_gazpacho_Click(object sender, RoutedEventArgs e) {
+            RestaurantMenu.MainWindow.basketContent.Add(new Dish { Title = "Гаспачо", Price = 200 });
         }
     }
 }

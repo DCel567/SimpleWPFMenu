@@ -28,7 +28,7 @@
 						</TextBlock>
 						<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
 							<TextBlock Text="400 р." VerticalAlignment="Center" Margin="20" FontSize="20" FontFamily="Century Gothic"/>
-							<Button Width="100" Content="Добавить" FontFamily="Century Gothic" Margin="10"/>
+							<Button x:Name="btn_margherita" Width="100" Content="Добавить" FontFamily="Century Gothic" Margin="10" Click="btn_margherita_Click"/>
 						</StackPanel>
 					</StackPanel>
 				</Grid>
@@ -46,7 +46,7 @@
 						</TextBlock>
 						<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
 							<TextBlock Text="450 р." VerticalAlignment="Center" Margin="20" FontSize="20" FontFamily="Century Gothic"/>
-							<Button Width="100" Content="Добавить" FontFamily="Century Gothic" Margin="10"/>
+							<Button x:Name="btn_pepperoni" Click="btn_pepperoni_Click"  Width="100" Content="Добавить" FontFamily="Century Gothic" Margin="10"/>
 						</StackPanel>
 					</StackPanel>
 				</Grid>
@@ -64,7 +64,7 @@
 						</TextBlock>
 						<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
 							<TextBlock Text="100 р." VerticalAlignment="Center" Margin="20" FontSize="20" FontFamily="Century Gothic"/>
-							<Button Width="100" Content="Добавить" FontFamily="Century Gothic" Margin="10"/>
+							<Button x:Name="btn_hawaiian" Click="btn_hawaiian_Click" Width="100" Content="Добавить" FontFamily="Century Gothic" Margin="10"/>
 						</StackPanel>
 					</StackPanel>
 				</Grid>

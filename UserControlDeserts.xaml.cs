@@ -21,5 +21,17 @@ namespace RestaurantMenu {
         public UserControlDeserts() {
             InitializeComponent();
         }
+
+        private void btn_tiramisu_Click(object sender, RoutedEventArgs e) {
+            RestaurantMenu.MainWindow.basketContent.Add(new Dish { Title = "Тирамису", Price = 200 });
+        }
+
+        private void btn_yogurt_Click(object sender, RoutedEventArgs e) {
+            RestaurantMenu.MainWindow.basketContent.Add(new Dish { Title = "Йогурт", Price = 230 });
+        }
+
+        private void btn_tortik_Click(object sender, RoutedEventArgs e) {
+            RestaurantMenu.MainWindow.basketContent.Add(new Dish { Title = "Тортик", Price = 200 });
+        }
     }
 }

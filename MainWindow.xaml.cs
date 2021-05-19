@@ -17,10 +17,16 @@ namespace RestaurantMenu {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    public class Dish {
+        public string Title { get; set; }
+        public double Price { get; set; }
+    }
+
     public partial class MainWindow : Window {
 
         public static List<string> basketContains = new List<string>(){};
         public static double totalPrice = 0;
+        public static List<Dish> basketContent = new List<Dish>() {};
         
         public MainWindow() {
             InitializeComponent();
@@ -76,7 +82,13 @@ namespace RestaurantMenu {
         private void btn_basket_Click(object sender, RoutedEventArgs e) {
             GridPrincipal.Children.Clear();
             UserControlBasket basket = new UserControlBasket();
-            basket.list.ItemsSource = basketContains;
+            basket.list.ItemsSource = basketContent;
+
+            double totalPrice = 0;
+            for(int i = 0; i < basketContent.Count; i++){
+                totalPrice += basketContent[i].Price;
+            }
+
             basket.TotalPrice.Text = Convert.ToString(totalPrice)+" р.";
             GridPrincipal.Children.Add(basket);
 

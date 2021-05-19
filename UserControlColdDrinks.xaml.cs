@@ -21,5 +21,17 @@ namespace RestaurantMenu {
         public UserControlColdDrinks() {
             InitializeComponent();
         }
+
+        private void cocktail_Click(object sender, RoutedEventArgs e) {
+            RestaurantMenu.MainWindow.basketContent.Add(new Dish { Title = "Коктейль", Price = 200 });
+        }
+
+        private void cola_Click(object sender, RoutedEventArgs e) {
+            RestaurantMenu.MainWindow.basketContent.Add(new Dish { Title = "Кока-Кола", Price = 230 });
+        }
+
+        private void beer_Click(object sender, RoutedEventArgs e) {
+            RestaurantMenu.MainWindow.basketContent.Add(new Dish { Title = "Пиво", Price = 200 });
+        }
     }
 }

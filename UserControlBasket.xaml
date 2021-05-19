@@ -15,15 +15,29 @@
 					<ColumnDefinition Width="*"/>
 					<ColumnDefinition Width="*"/>
 				</Grid.ColumnDefinitions>
-				<Grid Grid.Column="0" Height="300" Background="#fff3f3f3" Margin="10">
+				<Grid Grid.Column="0" Height="500" Width="200" Background="#fff3f3f3" Margin="10">
 					<Grid.Effect>
 						<DropShadowEffect BlurRadius="20" Color="#FFE4E4E4" ShadowDepth="1"/>
 					</Grid.Effect>
 
 					<StackPanel Width="200">
-						<TextBlock Margin="10 10 0 0" FontSize="16" FontFamily="Showcard Gothic" Text="Корзина"/>
+						<TextBlock Margin="10 10 0 0" FontSize="20" FontFamily="Century Gothic" Text="Вы заказываете:" HorizontalAlignment="Center"/>
 						<ListBox x:Name="list">
-						
+							<ListBox.ItemTemplate>
+								<DataTemplate>
+									<StackPanel Margin="5" Orientation="Horizontal">
+										<Grid>
+											<TextBlock Text="{Binding Path=Title}" FontSize="16" FontFamily="Century Gothic" HorizontalAlignment="Left" />
+										</Grid>
+										<Grid>
+											<TextBlock Width="50" Text="{Binding Path=Price}" FontSize="16" Margin="10 0 0 0" FontFamily="Century Gothic" HorizontalAlignment="Center"/>
+										</Grid>
+										<Grid Width="auto">
+											<Button x:Name="btn_delete" Width="20" Height="20" Click="btn_delete_Click" HorizontalAlignment="Right"/>
+										</Grid>
+									</StackPanel>
+								</DataTemplate>
+							</ListBox.ItemTemplate>
 						</ListBox>
 						<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
 							<TextBlock x:Name="TotalPrice" Text="400 р." VerticalAlignment="Center" Margin="20" FontSize="20" FontFamily="Century Gothic"/>

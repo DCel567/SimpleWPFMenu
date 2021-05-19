@@ -25,5 +25,9 @@ namespace RestaurantMenu {
         private void Button_Click(object sender, RoutedEventArgs e) {
 
         }
+
+        private void btn_delete_Click(object sender, RoutedEventArgs e) {
+
+        }
     }
 }
